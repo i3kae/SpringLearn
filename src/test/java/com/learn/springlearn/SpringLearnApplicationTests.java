@@ -58,13 +58,13 @@ class SbbApplicationTests {
     @Test
     void testJpaFindBySubjects() {
         Question q = this.questionRepository.findBySubject("sbb가 무엇인가요?");
-        assertEquals(15, q.getId());
+        assertEquals(1, q.getId());
     }
     @Test
     void testJpaFindBySubjectAndContent() {
         Question q = this.questionRepository.findBySubjectAndContent(
                 "sbb가 무엇인가요?", "sbb에 대해서 알고 싶습니다.");
-        assertEquals(15, q.getId());
+        assertEquals(1, q.getId());
     }
     @Test
     void testJpaFindBySubjectLike() {
@@ -72,11 +72,10 @@ class SbbApplicationTests {
         Question q = qList.get(0);
         assertEquals("sbb가 무엇인가요?", q.getSubject());
     }
-
     /*
     @Test
     void testJpaInsertAnswerEntity() {
-        Optional<Question> oq = this.questionRepository.findById(15);
+        Optional<Question> oq = this.questionRepository.findById(1);
         assertTrue(oq.isPresent());
         Question q = oq.get();
 
@@ -92,12 +91,12 @@ class SbbApplicationTests {
         Optional<Answer> oa = this.answerRepository.findById(1);
         assertTrue(oa.isPresent());
         Answer a = oa.get();
-        assertEquals(15, a.getQuestion().getId());
+        assertEquals(1, a.getQuestion().getId());
     }
     @Transactional
     @Test
     void testJpaFindQuestionWithAnswer() {
-        Optional<Question> oq = this.questionRepository.findById(15);
+        Optional<Question> oq = this.questionRepository.findById(1);
         assertTrue(oq.isPresent());
         Question q = oq.get();
 
