@@ -1,5 +1,6 @@
-package com.learn.springlearn;
+package com.learn.springlearn.question;
 
+import com.learn.springlearn.answer.Answer;
 import java.time.LocalDateTime;
 import java.util.List;
 

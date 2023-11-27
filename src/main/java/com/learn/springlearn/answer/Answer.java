@@ -1,5 +1,6 @@
-package com.learn.springlearn;
+package com.learn.springlearn.answer;
 
+import com.learn.springlearn.question.Question;
 import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;

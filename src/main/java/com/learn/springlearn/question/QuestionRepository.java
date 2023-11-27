@@ -1,4 +1,4 @@
-package com.learn.springlearn;
+package com.learn.springlearn.question;
 
 import java.util.List;
 

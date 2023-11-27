@@ -1,4 +1,4 @@
-package com.learn.springlearn;
+package com.learn.springlearn.answer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
